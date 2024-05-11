@@ -66,6 +66,14 @@ const Home = () => {
      stagger:0.8
        });
 
+       gsap.from(".popHero", {
+        opacity: 0,
+        scale: 0.5,
+        ease: "back",
+        duration: 1.5,
+       stagger:0.8
+         });
+
        gsap.from(".anim-img", {
         duration: 2,
         opacity: 0.5,
@@ -96,8 +104,8 @@ const Home = () => {
   return (
     <>
       <nav>
-        <div className="flex w-full justify-between item-center px-9  py-1 bg-[#FCFCFC] navshadow z-30">
-          <img src={logo} alt="logo" className="w-[15vh] sm:w-28 " />
+        <div className="flex w-full justify-between item-center md:px-9 px-6  py-1 bg-[#FCFCFC] navshadow z-30">
+          <img src={logo} alt="logo" className=" sm:w-28 w-28 " />
           <span className="flex justify-end items-center ">
           <span onClick={openPopup}
         className="border-[1px] mx-6 border-[#A92525] p-1 px-3 rounded-lg z-30 text-[#A92525] cursor-pointer hover:bg-[#A92525] hover:text-white"
@@ -118,32 +126,23 @@ const Home = () => {
       {/* HERO SECTION */}
   <RegisterPopup isPopupOpen={isPopupOpen} closePopup={closePopup}/>
 <div>
-  <span className=" flex  md:flex-row flex-col-reverse sm:flex-row relative md:mx-16 mx-6 mb-0 md:h-[620px] h-[630px]">
+  <span className=" flex  md:flex-row flex-col sm:flex-row relative md:mx-16 mx-6 mb-0 ">
 
-    <div className=" flex  sm:mx-6 md:flex-row flex-col sm:flex-row items-center justify-start  md:-translate-y-16 sm:-translate-y-20  -translate-y-64   ">
-    <Marquee
-      
-      autoFill
-      pauseOnHover
-      speed={50}
-      loop={0}
-      
-     direction="down"
-      className=" md:w-[35%] md:h-[20rem]  w-[100%]  sm:h-[22rem] sm:w-[40%] h-[21rem] rounded-lg  overflow-hidden"
-    > 
-    <div className="  flex flex-col justify-around items-center ">
-    {heroImage.map((image)=>
-      <img src={image.hero}  key={image.id} alt="banner1"  className="md:w-[450px]  py-20 px-6"  />
+    <div className=" flex  sm:mx-6 md:flex-row flex-col sm:flex-row items-center justify-start  ">
+   
+    <div className="  flex  justify-around items-center ">
+    {/* {heroImage.map((image)=> */}
+      <img src={Hero1}   alt="banner1"  className="md:w-[430px] sm:w-[350px] py-20 px-6 popHero"  />
      
   
-    ) }
+    {/* ) } */}
     </div>
-     </Marquee>
+    
     </div>
-    <span className="mt-36 md:absolute sm:absolute absolute md:right-28  sm:right-0 ">
+    <span className="md:mt-36 sm:mt-36 md:absolute  md:right-28  sm:right-0 px-6 mb-6">
     <img src={heroCircles} alt="ellipse"  className="absolute top-0 right-16 w-36 md:-translate-y-9 popimg "/>
     <img src={heroCircles} alt="ellipse"  className="absolute top-80 right-0 w-36 popimg "/>
-      <p className=" font-montserrat text-primary font-bold md:text-[48px] sm:text-[28px] text-[22px] relative  anim">Connecting hearts, <br />building futures</p>
+      <p className=" font-montserrat text-primary font-bold md:text-[48px] sm:text-[28px] text-[28px] relative  anim">Connecting hearts, <br />building futures</p>
       <img src={heroCircles} alt="ellipse"  className="absolute top-0 w-16 -translate-x-3 popimg"/>
       <p className="text-[13px] font-DMsans font-light mt-1 anim">Your Journey to happily ever after starts here with us at Connecting <br /> Soulmate - <span className="text-primary font-normal">honorary services for hindu community</span></p>
       <span className="flex flex-row items-center font-DMsans mt-9 gap-9">
