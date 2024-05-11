@@ -129,7 +129,7 @@ const Home = () => {
       loop={0}
       
      direction="down"
-      className=" md:w-[47%] md:h-[50rem]  w-[100%]  sm:h-[22rem] sm:w-[40%] h-[21rem] rounded-lg  overflow-hidden"
+      className=" md:w-[43%] md:h-[25rem]  w-[100%]  sm:h-[22rem] sm:w-[40%] h-[21rem] rounded-lg  overflow-hidden"
     > 
     <div className="  flex flex-col justify-around items-center ">
     {heroImage.map((image)=>
