@@ -101,15 +101,16 @@ const RegisterPopup = ({ isPopupOpen, closePopup }) => {
                                     }}
                                 />
                             </label>
+                            <p className="absolute -bottom-6 text-start text-[13px] text-red-600">Please enter a WhatsApp phone number*</p>
                             {!valid && (
-                                <p className="absolute -bottom-6 text-start text-[12px] text-red-600">Please enter a valid phone number*</p>
+                                <p className="absolute -bottom-10 text-start text-[13px] text-red-600">Please enter a valid phone number*</p>
                             )}
                         </div>
                         {error && (
                             <p className="text-start mx-8  text-[12px] text-red-600">{error}</p>
                         )}
                         <div
-                            className="mb-6 background text-white text-center mx-6 mt-5 py-3 rounded-lg font-DMsans cursor-pointer"
+                            className="mb-3  background text-white text-center mx-6 mt-12 py-3 rounded-lg font-DMsans cursor-pointer"
                             onClick={handleSubmit}
                         >
                             Submit
