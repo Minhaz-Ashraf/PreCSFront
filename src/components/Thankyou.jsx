@@ -20,8 +20,7 @@ const Thankyou = () => {
         <img src={curve} alt="img" className="sm:w-full xl:w-full" />
         <img src={check} alt="img" className="w-[14%] xl:w-28 sm:w-[14%] md:w-[14%] mt-12" />
         <p className="text-center md:px-36 mx-3 pt-5 sm:px-20">
-          ‘Thank You for signing up, We usually take 3-5 business days for
-          verification. Once verified you will be able to access the profiles
+          ‘Thank You for pre-registering <br /> we will connect with you soon...
         </p>
         <Link
           to="/"
