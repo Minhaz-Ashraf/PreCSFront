@@ -16,7 +16,7 @@ const DataNotFound = ({ message, linkText, linkDestination, className }) =>
   );
 };
 
-function BackArrow({ className })
+function BackArrow({ className, text })
 {
   const navigate = useNavigate();
 
@@ -29,7 +29,7 @@ function BackArrow({ className })
       <span onClick={goBack}>
       <span className='flex items-center bg-primary md:bg-transparent sm:bg-transparent  text-white py-6 px-6'>
         <IoArrowBackOutline className="md:text-primary sm:text-primary text-[28px] cursor-pointer" />
-        <span> My profile</span>
+        <span> {text}</span>
         </span>
       </span>
     </span>

@@ -10,7 +10,7 @@ const Terms = () => {
       <div className="bg-[#FCFCFC] md:px-12 sm:px-9 navshadow  md:block sm:block hidden" id="conditions">
         <img src={logo} alt="" className="md:w-[16vh] sm:w-[11vh] pt-2 " />
       </div>
-      <BackArrow  className='md:absolute sm:fixed  md:ml-12   w-full fixed  sm:ml-5'/>
+      <BackArrow text="Back" className='md:absolute sm:fixed  md:ml-12   w-full fixed  sm:ml-5'/>
       <div className="bg-[#FCFCFC]  px-9 py-12 rounded-xl shadow md:mt-9 sm:mt-20 mt-28  md:mx-56 sm:mx-12 mx-6 mb-9">
         <p className=" font-montserrat  font-semibold text-[22px] text-center my-5">
           Terms & Conditions

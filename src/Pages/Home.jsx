@@ -168,7 +168,7 @@ const Home = () => {
   {chooseData.map((i, index) => (
     <React.Fragment key={index}>
       <div className="flex flex-col justify-center items-center md:w-[30%] sm:w-[30%] w-[70%] mt-14">
-        <span className="px-7 md:text-[25px] sm:text-[20px] font-semibold text-style">
+        <span className="px-7 md:text-[25px] sm:text-[20px]  text-[25px] font-semibold text-style">
           {i.head}
         </span>
         <span className="font-semibold sm:text-center">{i.title}</span>
@@ -191,7 +191,7 @@ const Home = () => {
           </h2>
         </span>
 
-        <span className="grid grid-cols-1 md:grid-cols-4 ss:grid-cols-2 sm:grid-cols-2 gap-8  px-16 mt-12 font-DMsans">
+        <span className="grid grid-cols-1 md:grid-cols-4 ss:grid-cols-2 sm:grid-cols-2 gap-8  md:px-16 px-6 sm:px-16 mt-12 font-DMsans">
           {cardData.map((m, index) => (
             <span className="rounded-2xl py-5 pb-9  card ">
               <span className="flex items-center justify-center ">
@@ -277,7 +277,7 @@ const Home = () => {
         <div className="md:px-16 px-6 md:rounded-[99px] rounded-[50px] bg-primary md:mx-16 sm:mx-9 mx-6 mt-32 py-5">
           <span className="flex md:flex-row sm:flex-row sm:py-6 flex-col-reverse  justify-between items-center">
             <span className="  ">
-              <h3 className="font text-white md:text-[35px] sm:text-[22px] text-[20px]  font-bold">
+              <h3 className="font text-white md:text-[35px] sm:text-[22px] text-[20px]  font-bold mt-6">
                 Your Perfect Match Awaits – Instantly on Your Fingertips!
               </h3>
               <p className=" text-white md:pe-36 sm:pe-32 pt-3 text-[13px] ">
@@ -285,10 +285,10 @@ const Home = () => {
                 Soulmate App. Download today on apple store or google play.
               </p>
               <span className="flex justify-start items-center mt-5">
-             <p className="font-bold md:text-[35px] sm:text-[22px] text-white font-montserrat blink"> Launching Soon</p>
+             <p className="font-bold md:text-[35px] sm:text-[22px] text-[25px] mb-5 text-white font-montserrat blink"> Launching Soon</p>
               </span>
             </span>
-            <img src={MobileProto} alt="img" className=" m-9 sm:w-60 md:w-96 float" />
+            <img src={MobileProto} alt="img" className=" m-9 sm:w-60 md:w-96 float " />
           </span>
         </div>
 
