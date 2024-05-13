@@ -253,7 +253,7 @@ const Home = () => {
           </h2>
         </span>
 
-        <span className="grid grid-cols-1 md:grid-cols-3 ss:grid-cols-2 sm:grid-cols-2 gap-8  px-16 mt-16">
+        {/* <span className="grid grid-cols-1 md:grid-cols-3 ss:grid-cols-2 sm:grid-cols-2 gap-8  px-16 mt-16">
           {coupleData.map((j) => (
             <span className="rounded-2xl h-[52vh] ">
               <span className="flex items-center justify-center">
@@ -272,7 +272,7 @@ const Home = () => {
           ))}
 
      
-        </span>
+        </span> */}
 </div>
         <div className="md:px-16 px-6 md:rounded-[99px] rounded-[50px] bg-primary md:mx-16 sm:mx-9 mx-6 mt-32 py-5">
           <span className="flex md:flex-row sm:flex-row sm:py-6 flex-col-reverse  justify-between items-center">
