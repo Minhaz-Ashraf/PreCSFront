@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const apiurl = axios.create({
-  baseURL: "https://precsserver-2.onrender.com/",
+  baseURL: "http://cspreadmin.gauravdesign.com/",
   // http://localhost:8000
   // You can add other default configurations here if needed
 });
