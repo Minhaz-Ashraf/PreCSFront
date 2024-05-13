@@ -1,9 +1,7 @@
-import axios from "axios";
+import axios from 'axios';
 
 const apiurl = axios.create({
-  baseURL: "https://cspreadmin.gauravdesign.com",
-  // http://localhost:8000
-  // You can add other default configurations here if needed
+    baseURL : "https://cspreadmin.gauravdesign.com",
 });
 
 export default apiurl;
