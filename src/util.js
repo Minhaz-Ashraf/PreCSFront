@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const apiurl = axios.create({
-    baseURL : "https://precsserver-2.onrender.com/",
+    baseURL : "https://cspreadmin.gauravdesign.com",
 });
 
 export default apiurl;
