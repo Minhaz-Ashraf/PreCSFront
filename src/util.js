@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const apiurl = axios.create({
-    baseURL : "https://cspreadmin.gauravdesign.com/",
+    baseURL : "https://pre-c-sserver.vercel.app",
 });
 
 export default apiurl;
