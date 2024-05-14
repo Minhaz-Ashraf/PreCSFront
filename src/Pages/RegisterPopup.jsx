@@ -27,7 +27,7 @@ const RegisterPopup = ({ isPopupOpen, closePopup }) => {
 
     const handleSubmit = async () => {
         try {
-            const response = await apiurl.post('/register', {
+            const response = await apiurl.post('/api/user/register', {
                 fullname,
                 email,
                 phone,
