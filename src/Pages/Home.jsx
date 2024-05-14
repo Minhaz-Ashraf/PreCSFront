@@ -104,7 +104,7 @@ const Home = () => {
   return (
     <>
       <nav>
-        <div className="flex w-full justify-between item-center md:px-9 px-6  py-1 bg-[#FCFCFC] navshadow z-30">
+        <div className="flex w-full justify-between item-center md:px-9 px-4  py-1 bg-[#FCFCFC] navshadow z-30">
           <img src={logo} alt="logo" className=" sm:w-28 w-28 " />
           <span className="flex justify-end items-center ">
           <span onClick={openPopup}
@@ -126,7 +126,7 @@ const Home = () => {
       {/* HERO SECTION */}
   <RegisterPopup isPopupOpen={isPopupOpen} closePopup={closePopup}/>
 <div>
-  <span className=" flex  md:flex-row flex-col sm:flex-row relative md:mx-16 mx-6 mb-0 ">
+  <span className=" flex  md:flex-row flex-col sm:flex-row relative md:mx-16 mx-4 mb-0 ">
 
     <div className=" flex  sm:mx-6 md:flex-row flex-col sm:flex-row items-center justify-start  ">
    
@@ -139,7 +139,7 @@ const Home = () => {
     </div>
     
     </div>
-    <span className="md:mt-36 sm:mt-36 md:absolute  md:right-28  sm:right-0 px-6 mb-6">
+    <span className="md:mt-36 sm:mt-36 md:absolute  md:right-28  sm:right-0 px-3 mb-6">
     <img src={heroCircles} alt="ellipse"  className="absolute top-0 right-16 w-36 md:-translate-y-9 popimg "/>
     <img src={heroCircles} alt="ellipse"  className="absolute top-80 right-0 w-36 popimg "/>
       <p className=" font-montserrat text-primary font-bold md:text-[48px] sm:text-[28px] text-[28px] relative  anim">Connecting hearts, <br />building futures</p>
