@@ -38,7 +38,7 @@ const RegisterPopup = ({ isPopupOpen, closePopup }) => {
         } catch (error) {
             console.error('Failed to register user', error);
             toast.error('Failed to register user')
-            setError('Please fill all required fields.');
+            setError('Please fill all required fields');
         }
     };
 
